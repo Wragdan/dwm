@@ -3,7 +3,7 @@
 /* Constants */
 #define TERMINAL "st"
 #define TERMCLASS "St"
-#define BROWSER "librewolf"
+#define BROWSER "firefox"
 
 /* appearance */
 static unsigned int borderpx   = 3;      /* border pixel of windows */
@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	 */
 	/* class        instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",       NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",    NULL,       NULL,       1 << 8,       0,           -1 },
+	//{ "Firefox",    NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -72,7 +72,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 //static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *browsercmd[]  = { "librewolf", NULL };
+static const char *browsercmd[]  = { "firefox", NULL };
 
 /*
  * Xresources preferences to load at startup
