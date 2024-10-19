@@ -116,7 +116,7 @@ static const Key keys[] = {
 	{ MODKEY,			                  XK_m,		       spawn,		           {.v = (const char*[]){ TERMINAL, "-e", "ncmpcpp", NULL } } },
 	{ MODKEY|ShiftMask,		          XK_m,		       spawn,		           SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,                       XK_w,          spawn,              {.v = browsercmd} },
-	{ MODKEY,                       XK_e,          spawn,              {.v = (const char*[]){ "yazi", NULL } } },
+	{ MODKEY,                       XK_e,          spawn,              {.v = (const char*[]){ TERMINAL, "-e", "yazi", NULL } } },
 	{ MODKEY,                       XK_b,          togglebar,          {0} },
 	{ MODKEY,                       XK_j,          focusstack,         {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,         {.i = -1 } },
