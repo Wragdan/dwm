@@ -10,6 +10,7 @@ static unsigned int borderpx   = 3;      /* border pixel of windows */
 static unsigned int snap       = 32;       /* snap pixel */
 static int showbar             = 1;        /* 0 means no bar */
 static int topbar              = 1;        /* 0 means bottom bar */
+static const int usealtbar     = 1;        /* 1 means use non-dwm status bar */
 static char secondFont[]       = "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true";
 static char font[]             = "monospace:size=12";
 static char dmenufont[]        = "monospace:size=12";
@@ -91,6 +92,7 @@ ResourcePref resources[] = {
 		{ "titlebordercolor",         STRING,  &titlebordercolor },	
     { "borderpx",     INTEGER,    &borderpx },
     { "snap",         INTEGER,    &snap },
+    { "usealtbar",    INTEGER,    &usealtbar },
 		{ "showbar",      INTEGER,    &showbar },
 		{ "topbar",       INTEGER,    &topbar },
 		{ "nmaster",      INTEGER,    &nmaster },
