@@ -1505,7 +1505,7 @@ run(void)
 
 void
 runAutostart(void) {
-	system("echo \"KILLING ALL DWM BLOCKS AND STARTING DWM\"; pkill dwmblocks; dwmblocks &");
+	//system("echo \"KILLING ALL DWM BLOCKS AND STARTING DWM\"; pkill dwmblocks; dwmblocks &");
 }
 
 
@@ -2438,7 +2438,7 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif /* __OpenBSD__ */
 	scan();
-        runAutostart();
+  runAutostart();
 	run();
 	cleanup();
 	XCloseDisplay(dpy);
