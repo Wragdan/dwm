@@ -10,6 +10,8 @@ static unsigned int borderpx   = 3;      /* border pixel of windows */
 static unsigned int snap       = 32;       /* snap pixel */
 static int showbar             = 1;        /* 0 means no bar */
 static int topbar              = 1;        /* 0 means bottom bar */
+static const int horizpadbar   = 2;        /* horizontal padding for statusbar */
+static const int vertpadbar    = 0;        /* vertical padding for statusbar */
 static char secondFont[]       = "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true";
 static char font[]             = "monospace:size=12";
 static char dmenufont[]        = "monospace:size=12";
