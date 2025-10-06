@@ -8,7 +8,7 @@
 /* appearance */
 static unsigned int borderpx   = 3;      /* border pixel of windows */
 static unsigned int snap       = 32;       /* snap pixel */
-static int showbar             = 1;        /* 0 means no bar */
+static int showbar             = 0;        /* 0 means no bar */
 static int topbar              = 1;        /* 0 means bottom bar */
 static const int usealtbar     = 1;        /* 1 means use non-dwm status bar */
 static char secondFont[]       = "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true";
