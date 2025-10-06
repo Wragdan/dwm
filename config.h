@@ -10,8 +10,6 @@ static unsigned int borderpx   = 3;      /* border pixel of windows */
 static unsigned int snap       = 32;       /* snap pixel */
 static int showbar             = 1;        /* 0 means no bar */
 static int topbar              = 1;        /* 0 means bottom bar */
-static const int vertpad       = 10;       /* vertical padding of bar */
-static const int sidepad       = 10;       /* horizontal padding of bar */
 static char secondFont[]       = "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true";
 static char font[]             = "monospace:size=12";
 static char dmenufont[]        = "monospace:size=12";
@@ -93,9 +91,6 @@ ResourcePref resources[] = {
 		{ "titlebordercolor",         STRING,  &titlebordercolor },	
     { "borderpx",     INTEGER,    &borderpx },
     { "snap",         INTEGER,    &snap },
-		{ "showbar",      INTEGER,    &showbar },
-		{ "vertpad",      INTEGER,    &vertpad },
-		{ "sidepad",      INTEGER,    &sidepad },
 		{ "showbar",      INTEGER,    &showbar },
 		{ "topbar",       INTEGER,    &topbar },
 		{ "nmaster",      INTEGER,    &nmaster },
