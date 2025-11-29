@@ -6,11 +6,13 @@
 #define BROWSER "librewolf"
 
 /* appearance */
-static unsigned int borderpx   = 3;      /* border pixel of windows */
-static unsigned int snap       = 32;       /* snap pixel */
-static int showbar             = 0;        /* 0 means no bar */
-static int topbar              = 1;        /* 0 means bottom bar */
-static const int usealtbar     = 1;        /* 1 means use non-dwm status bar */
+static unsigned int borderpx   = 3;               /* border pixel of windows */
+static unsigned int snap       = 32;              /* snap pixel */
+static int showbar             = 1;               /* 0 means no bar */
+static int topbar              = 1;               /* 0 means bottom bar */
+static const int usealtbar     = 1;               /* 1 means use non-dwm status bar */
+static const char *altbarclass = "Eww";            /* Alternate bar class name */
+static const char *altbarcmd   = "eww open bar";  /* Alternate bar launch command */
 static char secondFont[]       = "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true";
 static char font[]             = "monospace:size=12";
 static char dmenufont[]        = "monospace:size=12";
