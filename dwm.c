@@ -2393,6 +2393,10 @@ view(const Arg *arg)
 	focus(NULL);
 	arrange(selmon);
   updatecurrentdesktop();
+  char buffer[24];
+  int x = ffs(arg->ui);
+  snprintf(buffer, sizeof(buffer), "eww update tag_poll=%d", x);
+  system(buffer);
 }
 
 Client *
